@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+}
+.chat-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: auto;
+  background-color: black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  animation: slide-in 0.5s;
+  word-wrap: break-word; /* Ajout de cette propriété */
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sender-container {
+  display: flex;
+  align-items: center;
+}
+
+.platform-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.spacer {
+  margin-right: 5px;
+}
+
+.sender {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.content {
+  color: white;
+}
