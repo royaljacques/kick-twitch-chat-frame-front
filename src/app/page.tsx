@@ -10,7 +10,7 @@ export default function Home() {
   }[]>([]);
 
   useEffect(() => {
-    const ws = new WebSocket('ws://api.jacqueskoenig.eclipscloud.fr');
+    const ws = new WebSocket('wss://api.jacqueskoenig.eclipscloud.fr');
 
     ws.onopen = () => {
       ws.send(JSON.stringify({
